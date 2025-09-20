@@ -1,0 +1,42 @@
+<form action="{% url 'result' %}" method="POST">
+    {% csrf_token %}
+    
+    <p>Area</p>
+    <input type="text" name="area">
+
+    <p>Number of Bedrooms</p>
+    <input type="text" name="bedrooms">
+
+    <p>Number of Bathrooms</p>
+    <input type="text" name="bathrooms">
+
+    <p>Stories</p>
+    <input type="text" name="stories">
+
+    <p>Have Main Road? (0/1)</p>
+    <input type="text" name="mainroad">
+
+    <p>Number of Guestrooms</p>
+    <input type="text" name="guestroom">
+
+    <p>Have Basement? (0/1)</p>
+    <input type="text" name="basement">
+
+    <p>Have Hot Water Heater? (0/1)</p>
+    <input type="text" name="hotwaterheating">
+
+    <p>Have Air Conditioner? (0/1)</p>
+    <input type="text" name="airconditioning">
+
+    <p>Have Parking? (0/1)</p>
+    <input type="text" name="parking">
+
+    <p>Have Pref Area? (0/1)</p>
+    <input type="text" name="prefarea">
+
+    <p>Furnishing Status (Old(0)/Medium(1)/New(2))</p>
+    <input type="text" name="furnishingstatus">
+
+    <br><br>
+    <input type="submit" value="Predict">
+</form>
